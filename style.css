@@ -1,0 +1,254 @@
+/*import google font below this line*/
+
+/*import google font above this line*/
+
+/*scroll behavior if necessary add below here*/
+
+/*scroll behavior if necessary add below here*/
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+/*///////////////navbar section/////////////*/
+
+nav {
+  width: 100%;
+  margin-top: 0px;
+  padding: 15px;
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+/*navbar left words*/
+nav .logo {
+  float: left;
+  margin-left: 30px;
+  padding: 8px 10px;
+  margin-top: -10px;
+  color: black;
+  text-decoration: none;
+}
+
+/*navbar right words,
+  for stay right side .
+*/
+nav ul {
+  float: right;
+  padding-right: 30px;
+}
+
+/* make it inline display*/
+nav ul li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+/*navbar menu item setting */
+nav ul li a {
+  padding: 8px 10px;
+  text-decoration: none !important;
+  color: black;
+}
+
+ul li a:hover {
+  background: rgb(192, 188, 188);
+  color: black;
+}
+
+.logo:hover {
+  background: rgb(192, 188, 188);
+}
+
+/*hide right bar when screen small than 650px*/
+@media (max-width: 650px) {
+  ul {
+    display: none;
+  }
+
+  .img2 {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  ul {
+    display: none;
+  }
+  .img2 {
+    display: none;
+  }
+}
+
+/*/ /////////////////////end of the navbar/////////////*/
+/*-------burger-------*/
+
+.text1 {
+  position: relative;
+  bottom: 80px;
+  left: 80px;
+  font-size: 20px;
+  color: rgb(85, 85, 85);
+}
+/*---x-burger-x---*/
+
+/*--------About catering section-----------*/
+.about_text h5 {
+  margin-top: 2.8rem;
+  letter-spacing: 7px;
+  font-size: 1rem;
+}
+.about_text h1 {
+  letter-spacing: 7px;
+  font-size: 2rem;
+}
+.about_text p {
+  margin-top: 1.8rem;
+}
+/*gap between Le catering and About Catering */
+.gap {
+  padding: 20px 0px;
+}
+/*-----xx-About catering section----xx-----*/
+
+/*-------Menu section-------*/
+.item1 {
+  text-align: center;
+  letter-spacing: 7px;
+  font-size: 2rem;
+}
+dl dt {
+  padding: 20px 0;
+  color: rgb(85, 85, 85);
+}
+dt dd {
+  color: rgb(116, 116, 116);
+}
+/*----x--Menu section --x----*/
+
+/*------Contact-------*/
+#contact h1 {
+  padding: 50px 0;
+}
+#contact p {
+  font-size: 15px;
+}
+#contact h3 {
+  color: darkcyan;
+  font-size: 17px;
+  padding: 16px 0;
+}
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 20px 10px;
+  margin-top: 10px;
+  background: white;
+}
+button {
+  margin-top: 20px;
+}
+/*-------about-------*/
+.about_text {
+  margin-left: auto;
+  color: rgb(85, 85, 85);
+}
+.item1 {
+  text-align: center;
+}
+dl dt {
+  padding: 20px 0;
+  color: rgb(85, 85, 85);
+}
+dt dd {
+  color: rgb(116, 116, 116);
+}
+
+/*-------------Footer-----------*/
+.footer-background {
+  background: rgb(236, 234, 234);
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/*============================================
+  ====== About section fade-left==============
+  ============================================
+*/
+.about {
+  opacity: 0;
+  transform: translateX(500px);
+  transition: all 1s ease-in-out;
+}
+
+.about.fade-in {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/*============================================
+  ===== Menu section fade-right ==============
+  ============================================
+*/
+#menu {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease-in-out;
+}
+
+#menu.fade-out {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/*============================================
+  ===== Contact section fade-up ==============
+  ============================================
+*/
+#contact {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+}
+
+#contact.fade-up {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.footer-text > p {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+}
+.footer-text > p.fade-up-down {
+  opacity: 1;
+  transform: translateY(0px);
+}
